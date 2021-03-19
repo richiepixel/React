@@ -8,13 +8,14 @@ import heroes, { owners } from '../data/heroes'
   return heroes.find((h) => h.id === id);
 } */
 
-const getHeroeById = (id) => heroes.find((h) => h.id === id);
+export const getHeroeById = (id) => heroes.find((h) => h.id === id);
 
 
-console.log(getHeroeById(3));
+// console.log(getHeroeById(3));
 
-const getHeroeByOwner = (owner) => heroes.filter((h) => h.owner === owner)
+export const getHeroeByOwner = (owner) => heroes.filter((h) => h.owner === owner)
 
-console.log(owners)
+// console.log(owners)
+// console.log(getHeroeByOwner('Marvel'));
 
-console.log(getHeroeByOwner('Marvel'));
+
