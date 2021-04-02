@@ -30,7 +30,7 @@ describe('Pruebas en <CounterApp />', () => {
   });
 
   test('debe de decrementar el boton en -1 ', () => {
-    const btn = wrapper.find('button').at(1).simulate('click');
+    wrapper.find('button').at(1).simulate('click');
     const counterText = wrapper.find('h2').text().trim();
     expect(counterText).toBe('9');
   });
@@ -40,7 +40,7 @@ describe('Pruebas en <CounterApp />', () => {
 
     wrapper.find('button').at(0).simulate('click');
     wrapper.find('button').at(0).simulate('click');
-    wrapper.find('button').at(2).simulate('click');
+    wrapper.find('button').at(2).simulate('click'); //botón de reset
 
     const counterText = wrapper.find('h2').text().trim();
     expect(counterText).toBe('105');
