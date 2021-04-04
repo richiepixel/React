@@ -1,30 +1,21 @@
 import React from 'react';
 import { useFetchGifs } from '../hooks/useFetchGifs';
-//import { getGifs } from '../helpers/getGifs';
-// import GifGridItem from './GifGridItem';
+import GifGridItem from './GifGridItem';
 
 const GifGrid = ({ category }) => {
-  // const [images, setImages] = useState([]);
-
-  const { data, loading } = useFetchGifs(); //const state = useFetchGifs();
-  console.log(data);
-  console.log(loading);
-
-  // useEffect(() => {
-  //   getGifs(category).then(setImages); // (imgs) => setImages(imgs)
-  // }, [category]); //Cada que la categoria cambia se ejcutará de nuevo.
+  const { data: images, loading } = useFetchGifs(category); //const state = useFetchGifs();
 
   return (
     <>
       <h3>{category}</h3>
 
-      {loading ? 'Cargando...' : 'Data cargada'}
+      {loading && <p>Loading...</p>}
 
-      {/*  <div className="card-grid">
+      <div className="card-grid">
         {images.map((img) => (
           <GifGridItem key={img.id} {...img} /> //{...img} = (img = {img})
         ))}
-      </div> */}
+      </div>
     </>
   );
 };
