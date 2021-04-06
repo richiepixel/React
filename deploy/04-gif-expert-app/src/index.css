@@ -1,0 +1,41 @@
+* {
+  background-color: lightgray;
+  font-family: Helvetica, Arial, sans-serif;
+}
+body {
+  padding: 60px;
+}
+input {
+  background-color: white;
+  color: grey;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  align-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  padding: auto;
+}
+.card p {
+  background-color: lightsteelblue;
+  border-top: 0.3px solid black;
+  /* border-bottom: 1px solid black; */
+  border-radius: 0.5px;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+}
+.card img {
+  display: flex;
+  margin: 0 auto;
+  max-height: 170px;
+}
