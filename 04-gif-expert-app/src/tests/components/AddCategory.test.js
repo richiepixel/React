@@ -31,4 +31,29 @@ describe('Pruebas en <AddCategory />', () => {
     });
     expect(setCategories).not.toHaveBeenCalled();
   });
+
+  test('debe de llamar el setCategories y limpiar la caja de texto', () => {
+    const value = 'Dustin';
+    //Simular el inputChange
+    wrapper.find('input').simulate('change', {
+      target: { value },
+    });
+
+    //Simular el subnmit
+    wrapper.find('form').simulate('submit', {
+      preventDefault() {},
+    });
+
+    //setCategories debe de ser llamado
+    expect(setCategories).toHaveBeenCalled();
+
+    //setCategories debe de ser llamado 1 vez
+    expect(setCategories).toHaveBeenCalledTimes(1);
+
+    //setCategories debe de ser llamado con una función
+    expect(setCategories).toHaveBeenCalledWith(expect.any(Function));
+
+    //El valor del input debe de estar en ''
+    expect(wrapper.find('input').prop('value')).toBe('');
+  });
 });
