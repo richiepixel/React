@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifGridItem /> debe de mostrar el componente correctamente 1`] = `
+<div
+  className="card animate__animated animate__fadeInDown"
+>
+  <img
+    alt="legend of zelda GIF"
+    src="https://media2.giphy.com/media/5MjQ87rBCRIB2/giphy.gif?cid=52d5781amo7m364mwu12b47its9vkdcwnpqx9gndzfykpgyr&rid=giphy.gif"
+  />
+  <p>
+    legend of zelda GIF
+  </p>
+</div>
+`;
