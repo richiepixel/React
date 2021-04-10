@@ -1,5 +1,8 @@
 {
   "typeAcquisition": {
     "include": ["jest"]
+  },
+  "compilerOptions": {
+    "module": "es2015"
   }
 }
