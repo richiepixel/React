@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebuas en <GifGrid u/> debe de mostrar el componente correctamente 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__bounceInLeft"
+  >
+    Zelda
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Loading...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Pruebuas en <GifGrid u/> debe de mostrar items cuando se cargan imágenes con useFetchGifs 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__bounceInLeft"
+  >
+    Zelda
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="zelda1"
+      key="zelda1"
+      title="legend of zelda GIF"
+      url="https://media2.giphy.com/media/5MjQ87rBCRIB2/giphy.gif?cid=52d5781amo7m364mwu12b47its9vkdcwnpqx9gndzfykpgyr&rid=giphy.gif"
+    />
+  </div>
+</Fragment>
+`;
