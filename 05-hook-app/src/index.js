@@ -11,6 +11,7 @@ import ReactDOM from 'react-dom';
 //import { Layout } from './components/05-useLayoutEffect/Layout';
 //import Memorize from './components/06-memos/Memorize';
 // import CallBackHook from './components/06-memos/CallBackHook';
-import { Padre } from './components/07-tarea-memo/Padre';
+// import { Padre } from './components/07-tarea-memo/Padre';
+import TodoApp from './components/08-reducer/TodoApp';
 
-ReactDOM.render(<Padre />, document.getElementById('root'));
+ReactDOM.render(<TodoApp />, document.getElementById('root'));
