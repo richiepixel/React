@@ -16,5 +16,4 @@ const TodoList = ({ todos, handleDelete, handleToogle }) => {
     </ul>
   );
 };
-
 export default TodoList;

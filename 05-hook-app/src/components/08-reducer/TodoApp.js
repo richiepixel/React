@@ -52,26 +52,6 @@ const TodoApp = () => {
         </div>
         <div className="col-5">
           <TodoAdd handleAddTodo={handleAddTodo} />
-          {/* <h4>Agregar TODO</h4>
-          <hr />
-
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              name="description"
-              className="form-control"
-              placeholder="Aprender..."
-              autoComplete="off"
-              value={description}
-              onChange={handleInputChange}
-            />
-            <button
-              type="submit"
-              className="btn btn-outline-primary mt-1 col-12"
-            >
-              Agregar
-            </button>
-          </form> */}
         </div>
       </div>
     </div>
