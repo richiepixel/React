@@ -34,6 +34,6 @@ describe('Pruebas en <TodoAdd/>', () => {
       desc: value,
       done: false,
     });
-    expect(wrapper.find('input').prop('value')).toBe('');
+    expect(wrapper.find('input').prop('value')).toBe(''); //Es para comprobar que se llame el reset despues de agregaer un Todo
   });
 });
