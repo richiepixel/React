@@ -40,7 +40,7 @@ export const SearchScreen = ({ history }) => {
               autoComplete="off"
             />
 
-            <button type="submit" className="btn m-1 btn-block btn-outline-primary">
+            <button type="submit" className="btn mt-1 btn-block btn-outline-primary">
               Search...
             </button>
           </form>
