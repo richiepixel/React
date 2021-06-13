@@ -1,4 +1,4 @@
-html,
-body {
-  background-color: blueviolet;
-}
+@import './base/settings';
+@import './base/base';
+@import './components/auth';
+@import './components/buttons';
