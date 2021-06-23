@@ -8,7 +8,7 @@ import { useForm } from '../../hooks/useForm';
 
 export const LoginScreen = () => {
   const dispatch = useDispatch();
-  const { msgError, loading } = useSelector((state) => state.ui);
+  const { loading } = useSelector((state) => state.ui);
 
   const [formValues, handleInputChange] = useForm({
     email: 'richie.cedillo7@outlook.com',
@@ -46,7 +46,6 @@ export const LoginScreen = () => {
       <h3 className="auth__title">Login</h3>
 
       <form onSubmit={handleLogin}>
-        {msgError && <div className="auth__alert-error">{msgError}</div>}
         <input
           className="auth__input"
           type="text"

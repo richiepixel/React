@@ -1,6 +1,8 @@
 import { types } from '../types/types';
+import Swal from 'sweetalert2';
 
 export const setError = (err) => {
+  Swal.fire('Error', err, 'error');
   return {
     type: types.uiSetError,
     payload: err,
