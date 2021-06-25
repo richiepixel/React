@@ -8,7 +8,6 @@ import { useForm } from '../../hooks/useForm';
 
 export const RegisterScreen = () => {
   const dispatch = useDispatch();
-  // const { msgError } = useSelector((state) => state.ui);
 
   const [formValues, handleInputChange] = useForm({
     name: 'Richie',
@@ -23,7 +22,6 @@ export const RegisterScreen = () => {
     e.preventDefault();
 
     if (isFormValid()) {
-      console.log('Formulario correcto');
       dispatch(startRegisterWithEmailPasswordName(email, password, name));
     }
   };
