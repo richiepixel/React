@@ -10,6 +10,5 @@ export const loadNotes = async (uid) => {
       ...snap.data(),
     });
   });
-  console.log(notes);
   return notes;
 };
