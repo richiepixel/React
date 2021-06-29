@@ -46,10 +46,7 @@ export const NoteScreen = () => {
         ></textarea>
         {url && (
           <div className="notes__image">
-            <img
-              src="https://get.wallhere.com/photo/night-galaxy-space-sky-stars-Milky-Way-alone-atmosphere-spiral-galaxy-astronomy-midnight-star-darkness-outer-space-astronomical-object-geological-phenomenon-21653.jpg"
-              alt="landscape_image"
-            />
+            <img src={url} alt="note_image" />
           </div>
         )}
       </div>
